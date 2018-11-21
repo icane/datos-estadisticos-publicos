@@ -66,3 +66,28 @@ ul li:before{content:'\00b7'; font-size:50px; line-height:24px; vertical-align:m
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     }
+
+.multiCol {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: left; }
+    .multiCol .col {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+        padding: 0 0 0 3%; }
+        .multiCol .col:first-of-type {
+        padding-left: 0; }
+    
+    .box {
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */ }

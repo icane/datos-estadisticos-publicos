@@ -39,9 +39,9 @@
 					## Hoja de ruta
 
 					1. Datos y metadatos
-					2. Difusión de datos
+					2. Difusión de datos estadísticos
 					3. Visualización de datos
-					4. Web semántica
+					4. Web semántica y datos enlazados
 					5. Datos abiertos
 					6. Gobierno abierto
 					7. Grandes datos
@@ -69,25 +69,44 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-						# ¿Sabiduría?
+						## Sabiduría 
+						Tomar medidas concretas aplicando el conocimiento.  <!-- .element: class="fragment" data-fragment-index="1" -->
+						
+						¿Ejemplo? <!-- .element: class="fragment" data-fragment-index="2" -->
+						
+						**Facilitar los trámites para la creación de empresas.**  <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 					</section>
+					<section data-markdown>
+							<script type="text/template">
+							## ¿Cómo se hacen llegar los datos al público?
+	</script>
+						</section>
 
 				</section>
 				<section>
 					<section data-id="2">
 
-						<h2>datos tabulares</h3>
+						<h2>Difusión</h3>
+						Primero fue la tabla...
 
 
 						<div style="line-height: 1.5em; text-align: left;">
 							<img alt="Datos tabulares"  src="./img/tabla900.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); " />
 						</div>
 					</section>
+					<section data-markdown>
+							<script type="text/template">
+								Los periodistas de datos prefieren...
+
+								[tidy data](http://vita.had.co.nz/papers/tidy-data.html), de Hadley Wickham
+							</script>
+						</section>
+
 					<section data-id="3">
 						<section data-id="3a">
 							<h3>
-								formatos de difusión
+								Formatos de difusión
 							</h3>
 
 
@@ -150,15 +169,15 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## API web
-							> Conjunto de funciones, generalmente de uso público, que permite a programadores y usuarios avanzados la extracción automatizada de datos de la web (entre otras funcionalidades)
+							## APIs web
+							> Conjuntos de funciones, generalmente de uso público, que permiten a programadores y usuarios avanzados la extracción automatizada de datos de la web (entre otras funcionalidades)
 
 							[Google Maps](https://developers.google.com/maps/?hl=es-419), [Twitter](https://dev.twitter.com/rest/public)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## se pueden ver como un enchufe...
+							## Se pueden ver como un enchufe...
 							![Enchufe](./img/plugin.jpg)
 
 							# de datos
@@ -171,15 +190,139 @@
 - [datos](http://www.icane.es/statistical-api)
 - [metadatos](http://www.icane.es/metadata/)
 - [datos abiertos](http://datos.icane.es/api/3/action/package_search?q=pesca)
+
+hacen falta programadores... o aprender [R](https://www.r-project.org/) o [Python](https://www.python.org/)
 						</script>
 					</section>
+					<section data-markdown>
+							<script type="text/template">
+							## ¿Cómo visualizar estos datos?
+	</script>
+						</section>
 </section>
+<section>
+		<section data-markdown>
+				<script type="text/template">
+				## Visualización
+				> Cualquier tipo de representación visual de información diseñada para potenciar la comunicación, el análisis, el descubrimiento y la exploración.
+
+				<small>[Alberto Cairo](http://albertocairo.com/), 20 años de experiencia en infografías, visualización de datos, periodismo de datos y diseño.</small>
+</script>
+			</section>
+
+			<section data-markdown>
+					<script type="text/template">
+					## Ejemplo de gráfico
+					![La Marcha de Napoleón](./img/minard.png)
+	
+					<small>[Charles Joseph Minard](https://es.wikipedia.org/wiki/Charles_Joseph_Minard), posiblemente la mejor visualización de datos de la historia</small>
+	</script>
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+						## Las 5 cualidades de las grandes visualizaciones
+						1. Veraz: basada en investigación honesta.<!-- .element: class="fragment" data-fragment-index="1" -->
+						2. Funcional: constituye una descripción precisa de los datos.<!-- .element: class="fragment" data-fragment-index="2" -->
+						3. Bella: estéticamente atractiva.<!-- .element: class="fragment" data-fragment-index="3" -->
+						4. Aguda: revela evidencia de otra forma difícil de ver.<!-- .element: class="fragment" data-fragment-index="4" -->
+						5. Esclarecedora: puede ayudar a cambiar nuestro punto de vista.<!-- .element: class="fragment" data-fragment-index="5" -->
+		
+						<small>[Alberto Cairo](http://albertocairo.com/), 20 años de experiencia en infografías, visualización de datos, periodismo de datos y diseño.</small><!-- .element: class="fragment" data-fragment-index="5" -->
+		</script>
+					</section>
+					<section data-markdown>
+							<script type="text/template">
+							### Elementos visuales de codificación
+							![La Marcha de Napoleón](./img/encoding.png)
+			
+							<small>A partir de [Cleveland y McGill](https://medium.com/@GT_Vis/evaluating-interactive-graphical-encodings-for-data-visualization-b9b8b4bf47f8)</small>
+			</script>
+						</section>
+
+						<section data-markdown>
+								<script type="text/template">
+								## ¿Cómo se hacen?
+
+								Mayormente, en Javascript<!-- .element: class="fragment" data-fragment-index="1" -->
+
+								Para que periodistas de datos cuenten historias:<!-- .element: class="fragment" data-fragment-index="2" --> [flourish](https://flourish.studio/)<!-- .element: class="fragment" data-fragment-index="2" -->
 				
+				</script>
+							</section>
+							<section data-id="12a">
+									<h3>
+										Dataviz: <a href="http://www.icane.es/data/cpi-base-2011-coicop-general-group-index#timeseries">básica</a>
+									</h3>
+									<img alt="Captura chart ICANE"  src="./img/googlechart.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" />
+									<p><a href="https://developers.google.com/chart/?hl=es">Google Charts</a>: simple y con <a href="./chart.html">poco código</a> </p>
+								</section>
+								<section data-id="12b">
+									<h3>
+										Dataviz: <a href="http://www.icane.es/data/municipal-register-annual-review-municipality#timeseries">mapas</a>
+									</h3>
+									<img alt="Captura mapas ICANE"  src="./img/choromap.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" />
+									<p><a href="http://dmitrybaranovskiy.github.io/raphael/">Raphael.js</a>: estándar (SVG) y browser-compatible </p>
+								</section>
+								<section data-id="12c">
+									<h3>
+										Dataviz: <a href="https://developers.google.com/chart/interactive/docs/gallery/geomap">Google Geomap</a>
+									</h3>
+									<a href="http://www.icane.es/data/export-import-geographic-areas-countries#timeseries"><img alt="Captura mapamundi ICANE"  src="./img/mapamundi.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> </a>
+			
+								</section>
+							
+									
+										<section data-markdown>
+											<script type="text/template">
+											## Otras
+											- [D3.js](https://d3js.org/)
+											- [chart.js](https://www.chartjs.org/)
+											- [Apex charts](https://apexcharts.com/)
+											</script>
+									</section>
+								<section data-markdown>
+									<script type="text/template">
+										## widgets de datos
+			
+										> Pequeña aplicación, programa o módulo que puede contener información visual, numérica o ambas</blockquote>
+			
+			
+										¡las <!-- .element: class="fragment" data-fragment-index="1" -->[Fichas Municipales de Cantabria](http://www.icane.es/munreport)<!-- .element: class="fragment" data-fragment-index="1" --> están llenas de widgets!<!-- .element: class="fragment" data-fragment-index="1" -->
+			
+										
+										aunque ya hay cosas <!-- .element: class="fragment" data-fragment-index="2" -->[mejores](https://stat-viewer.firebaseapp.com/)<!-- .element: class="fragment" data-fragment-index="2" -->
+			
+			
+									</script>
+			</section>
+			<section data-markdown>
+					<script type="text/template">
+						## Con todos estos elementos de difusión en Internet, la Web siguió creciendo...
+					</script>
+</section>
+</section>
 				 <section>
+						<section data-id="1" data-markdown>
+								<script type="text/template">
+									<div class="multiCol">
+										<div class="col">
+											<div class="box">
+											<h2>La Web Semántica...</h2>
+											</div>
+										</div>
+										<div class="col">
+											![Portada de Scientific American 2001](./img/semantic_web.png)
+										</div>
+		
+									</div>
+		
+		
+								</script>
+							</section>
                      <section data-id="5b">
-                         <h3>
-                             web semántica
-                         </h3>
+                         <h2>
+                             ...o web de los datos
+                         </h2>
                          <div style="text-align: center; margin-top:-0.5em">
                              <img   alt="Web de documentos vs web de datos"  src="./img/semanticweb.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);" />
                          </div>
@@ -211,12 +354,17 @@
 
                              </ul>
                          </div>
-
-
-                     </section>
+					 </section>
+					 <section data-id="1" data-markdown>
+							<script type="text/template">
+								## Linked Open Data
+								[![Parte de la nube de LOD](./img/lod-datasets_2009-07-14_cropped.png)](https://lod-cloud.net/)
+		
+							</script>
+						</section>
                      <section data-id="5i">
                          <h3>
-                             enlazado: ¿con quién?
+                             Enlazado: ¿con quién?
                          </h3>
                          <table style="font-size:20px">
                              <thead style="font-size:30px">
@@ -259,10 +407,6 @@
                                  <td>LEM de la Biblioteca del Congreso de EEUU</td>
                                  <td>151</td>
                              </tr>
-
-
-
-
                              </tbody>
 
                          </table>
@@ -270,12 +414,18 @@
                          <p >ICANE también está en <a href="http://www.programmableweb.com/api/icane-statistical">programmableweb</a></p>
 
 
-                     </section>
+					 </section>
+					 <section data-markdown>
+							<script type="text/template">
+								## ¿A qué dieron pie estos movimientos?
+							</script>
+		</section>
+					 
                  </section>
 				<section data-id="2">
 					<section data-id="2a" data-markdown>
 						<script type="text/template">
-							### datos abiertos: origen
+							### Datos abiertos: origen
 
 							![Obama](./img/obama.jpg)
 
@@ -297,14 +447,12 @@
 							- desde 205 APIs del Gobierno y 157 agencias
 							- [Directiva de Gobierno Abierto](https://obamawhitehouse.archives.gov/open/documents/open-government-directive)
 
-
-
 						</script>
 					</section>
-				</section>
-				<section data-id="3">
+		
 					<section data-id="3a" data-markdown>
 						<script type="text/template">
+							## Definición
 							|  |  |
 							|--|--|
 							|**datos**| representación simbólica de un atributo o variable cuantitativa|
@@ -317,7 +465,7 @@
 					</section>
 					<section data-id="3b" data-markdown>
 						<script type="text/template">
-							### propósito
+							### Propósito
 
 							- hacer pública información sobre lo que hacen los gobiernos <!-- .element: class="fragment" data-fragment-index="1" -->
 							- promover la participación ciudadana informada <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -336,11 +484,9 @@
 							libres de licencia
 
 					</section>
-				</section>
-				<section data-id="4">
 					<section data-id="4a" data-markdown>
 						<script type="text/template">
-							### marco legal
+							### Marco legal
 
 							![Evolución marco legal RISP](./img/marcolegal.png)
 
@@ -351,7 +497,7 @@
 
 					<section data-id="4a" data-markdown>
 						<script type="text/template">
-							### marco legal
+							### Marco legal
 
 							*directiva 2013/37/UE* **reconoce derecho** reutilización
 
@@ -363,7 +509,7 @@
 
 					<section data-id="4b" data-markdown>
 						<script type="text/template">
-							### contexto económico
+							### Contexto económico
 
 							![Sector infomediario 2014](./img/econ2014.png)
 
@@ -376,7 +522,7 @@
 
 					<section data-id="4b" data-markdown>
 						<script type="text/template">
-							### contexto económico
+							### Contexto económico
 
 							![Sector infomediario 2016](./img/econ2016.png)
 
@@ -387,21 +533,12 @@
 
 					</section>
 
-					<section data-id="4c" data-markdown>
-						<script type="text/template">
-							### situación en España
-
-							![Portales opendata en España](./img/mapa_opendata.png)
-
-							<small>[Datos abiertos en las Comunidades Autónomas y sus mayores ayuntamientos 2014](http://www.proyectosfundacionorange.es/docs/eE2014/Datos_Abiertos_2014.pdf), Fundación Orange</small>
-
-						</script>
-
-
-					</section>
+			
 					<section data-id="4d" data-markdown>
 						<script type="text/template">
-							### situación en España
+							### Situación en España
+
+							[datos.gob.es](http://datos.gob.es/es)
 
 							[Open Data maturity in Europe](https://www.europeandataportal.eu/sites/default/files/edp_landscaping_insight_report_n2_2016.pdf) <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -413,61 +550,62 @@
 
 
 					</section>
-
 					<section data-id="4e" data-markdown>
 						<script type="text/template">
-							### situación en Cantabria
+							## Situación en Cantabria
 
-							<blockquote style="font-size: 20px">
-								&ldquo;De esta forma se evalúan aquellos puntos de acceso únicos a los conjuntos de datos publicados por las CCAA y EELL, excluyéndose iniciativas de Datos Abiertos de carácter o cobertura menos amplia, aunque puedan existir conjuntos de datos publicados bajo iniciativas "parciales" que sean de valor y utilidad a los reutilizadores. En este sentido cabe señalar a Cantabria, que aun no disponiendo de portal de Datos Abiertos publica en la web del Instituto Cántabro de Estadística (ICANE), 3.803 conjuntos de datos en formatos avanzados "Linked Open Data", una considerable cantidad indicada en el cuestionario respondido. **La iniciativa es destacable por lo que supone de adaptación de la estructura de datos del ICANE a la realidad de los datos enlazados**, pero no se ha considerado como portal de Datos Abiertos de Cantabria por todo lo expuesto anteriormente y carecer de una cobertura amplia respecto al resto de conjuntos de datos de esta Comunidad Autónoma.&rdquo;
-							</blockquote>
-							<small>[Datos abiertos en las Comunidades Autónomas y sus mayores ayuntamientos 2014](http://www.proyectosfundacionorange.es/docs/eE2014/Datos_Abiertos_2014.pdf), Fundación Orange</small>
 
+							- [Santander](http://datos.santander.es)
+							- [Camargo](http://datos.aytocamargo.es/)
+							- [ICANE](http://datos.icane.es)
+							- [Dirección General de Ordenación del Territorio y Evaluación Ambiental Urbanística](http://www.territoriodecantabria.es/es/cartografia-sig/datos-abiertos-y-politica-de-licencias) 
+							
+							La Dirección General de Servicios y Atención a la Ciudadanía ha iniciado una línea de trabajo en apertura de datos públicos en Cantabria.<!-- .element: class="fragment" data-fragment-index="5" -->
+
+							<small>[Mapa de iniciativas en datos.gob.es](http://datos.gob.es/es/iniciativas)</small><!-- .element: class="fragment" data-fragment-index="5" -->
 						</script>
 
 
 					</section>
-					<section data-id="4e" data-markdown>
-						<script type="text/template">
-							en concreto:
 
-							- <!-- .element: class="fragment" data-fragment-index="1" -->[Santander](http://datos.santander.es) <!-- .element: class="fragment" data-fragment-index="1" -->
-							- <!-- .element: class="fragment" data-fragment-index="2" -->[Camargo](http://datos.aytocamargo.es/) <!-- .element: class="fragment" data-fragment-index="2" -->
-							- <!-- .element: class="fragment" data-fragment-index="3" -->[ICANE](http://datos.icane.es) <!-- .element: class="fragment" data-fragment-index="3" -->
-							- <!-- .element: class="fragment" data-fragment-index="4" -->[Dirección General de Ordenación del Territorio y Evaluación Ambiental Urbanística](http://www.territoriodecantabria.es/es/cartografia-sig/datos-abiertos-y-politica-de-licencias) <!-- .element: class="fragment" data-fragment-index="4" -->
-
-							<small>[mapa de iniciativas en datos.gob.es](http://datos.gob.es/es/iniciativas)</small><!-- .element: class="fragment" data-fragment-index="4" -->
-						</script>
-
-
-					</section>
+					<section data-markdown>
+							<script type="text/template">
+								## Pero publicar los datos de la Administración solo fue el comienzo...
+							</script>
+		</section>
 
 				</section>
 				<section>
 					<section data-markdown>
 						<script type="text/template">
-						#### gobierno abierto
+						#### Gobierno abierto
 						![Principios del Gobierno Abierto](./img/gobierno_abierto.png)
 
-						<small>[preparación del III Plan de Gobierno Abierto, Oficina para la Ejecución de la Reforma de la Administración (Julio 2016)](http://transparencia.gob.es/transparencia/dam/jcr:1efac173-6dc4-4a3a-bf2a-58848cbb30b0/2016_Julio_Preparaci%C3%B3n_III_GA_vpdf.pdf)</small>
+						<small>[Preparación del III Plan de Gobierno Abierto, Oficina para la Ejecución de la Reforma de la Administración (Julio 2016)](http://transparencia.gob.es/transparencia/dam/jcr:1efac173-6dc4-4a3a-bf2a-58848cbb30b0/2016_Julio_Preparaci%C3%B3n_III_GA_vpdf.pdf)</small>
 						</script>
 					</section>
 
 					<section data-markdown>
 						<script type="text/template">
-							### gobierno abierto en Cantabria
-							- [portal de transparencia](http://transparencia.cantabria.es/)
-							- [portal de participación ciudadana](http://participacion.cantabria.es/)
+							## Gobierno abierto en Cantabria
+							Normativa: 
+							- Ley 19/2013, de 9 de diciembre, de [transparencia](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12887), acceso a la información pública y buen gobierno
+							- [Ley de Cantabria](https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=324417) 1/2018, de 21 de marzo, de transparencia de la actividad pública
 
-							la Ley de Transparencia de Cantabria se encuentra en tramitación parlamentaria del [proyecto de ley](https://parlamento-cantabria.es/sites/default/files/dossieres-legislativos/Texto%20Proyecto%20de%20ley.pdf)
-
-							<small>en España, la Ley de Transparencia [ya está en vigor](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12887)</small>
-
+						</script>
+					</section>
+				<section data-markdown>
+						<script type="text/template">
+							## Gobierno abierto en Cantabria
+							Portales:
+							- Portal de [transparencia](http://transparencia.cantabria.es/)
+							- Portal de [participación ciudadana](http://participacion.cantabria.es/)
+						
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							### ¿qué les interesa a los cántabros?
+							### ¿Qué les interesa a los cántabros?
 							*El sueldo de los políticos acapara el 85% de las visitas al portal de transparencia* <!-- .element: class="fragment" data-fragment-index="1" -->
 
 							En opinión del Consejero de Presidencia y Justicia del Gobierno de Cantabria, <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -478,12 +616,16 @@
 
 						</script>
 					</section>
-
+					<section data-markdown>
+							<script type="text/template">
+								## ¿Y qué ocurre cuando hay millones, millones de datos?
+							</script>
+		</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<script type="text/template">
-							## big data
+							## Big data
 
 							><!-- .element: class="fragment" data-fragment-index="1" --> datos que sencillamente no caben en un PC<!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -501,7 +643,7 @@
 
 					<section data-markdown>
 						<script type="text/template">
-						#### historia
+						#### Historia
 						<a href="https://www.kdnuggets.com/2017/02/origins-big-data.html"><img src="./img/bigdata_history.jpg" alt="" /></a>
 
 
@@ -509,14 +651,14 @@
 					</section>
 					<section data-background="./img/data-center.jpg">
 						<div class="image">
-							<span class="image-text image-span">hacen falta infraestructuras especiales para procesarlos</span>
+							<span class="image-text image-span">Hacen falta infraestructuras especiales para procesarlos</span>
 
 						</div>
 
 					</section>
 					<section data-markdown data-background="./img/cloud-computing.jpg">
 						<script type="text/template">
-							### por suerte, tenemos la nube...
+							### Por suerte, tenemos la nube...
 
 							> AWS proporciona una máquina con 2 procesadores, 8 GB de RAM y 32 GB SSD por 0.133$/hora
 
@@ -539,14 +681,14 @@
 					<script type="text/template">
 toneladas de datos:
 ### información potencial
-se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
+Se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 
 <small>a veces se incluyen veracidad y viabilidad</small>
 					</script>
 							</section>
 					<section data-markdown>
 						<script type="text/template">
-							## volumen
+							## Volumen
 							> En 2002, se almacenaban y replicaban 25 Exabytes de información. Hoy almacenamos y transferimos esa información cada 7 días.
 
 
@@ -557,16 +699,16 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## variedad
-							antes teníamos bases de datos y hojas de cálculo
+							## Variedad
+							Antes había bases de datos y hojas de cálculo...
 
-							ahora tenemos emails, fotos, vídeos, tweets, posts, PDFs, audio...
+							ahora hay emails, fotos, vídeos, tweets, posts, PDFs, audio...
 						</script>
 					</section>
 					<section data-markdown data-background="./img/santander.jpg">
 						<script type="text/template">
-							## también tenemos IoT
-							la internet de las cosas...
+							## También existe el IoT
+							La internet de las cosas...
 
 							o los cientos/miles de sensores de SmartSantander
 
@@ -575,10 +717,10 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## velocidad
-							los datos se crean en tiempo real (o casi)
+							## Velocidad
+							Los datos se crean en tiempo real (o casi)
 
-							### necesitamos formas nuevas, rápidas y automáticas de extraer patrones de los datos
+							### Son necesarias formas nuevas, rápidas y automáticas de extraer patrones de los datos
 
 
 						</script>
@@ -595,7 +737,7 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 
 					<section data-markdown>
 						<script type="text/template">
-							### se resume así
+							### Se resume así
 
 							nuevas fuentes<!-- .element: class="fragment" data-fragment-index="1" --> +<!-- .element: class="fragment" data-fragment-index="1" --> computación en la nube<!-- .element: class="fragment" data-fragment-index="2" --> +<!-- .element: class="fragment" data-fragment-index="2" --> procesamiento paralelo<!-- .element: class="fragment" data-fragment-index="3" --> +<!-- .element: class="fragment" data-fragment-index="3" --> inteligencia artificial<!-- .element: class="fragment" data-fragment-index="4" -->
 
@@ -609,8 +751,8 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 
 					<section data-markdown>
 						<script type="text/template">
-							## impacto económico
-							varias estimaciones, pero todas en un rango de entre
+							## Impacto económico
+							Varias estimaciones, pero todas en un rango de entre
 
 							### 6,7 y 25,5 billones de euros
 
@@ -623,7 +765,7 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## impacto en la sociedad
+							## Impacto en la sociedad
 
 							- lucha contra el cambio climático<!-- .element: class="fragment" data-fragment-index="1" -->
 							- mejora en la educación<!-- .element: class="fragment" data-fragment-index="2" -->
@@ -636,7 +778,7 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## marco legal
+							## Marco legal
 
 							- <!-- .element: class="fragment" data-fragment-index="1" -->**no existe normativa específica**<!-- .element: class="fragment" data-fragment-index="1" --> para big data<!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -650,13 +792,13 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## ética y big data
+							## Ética y big data
 
 							**¡¡cuidado!!** <!-- .element: class="fragment" data-fragment-index="1" -->
 
-							cualquier experto puede tratar datos personales si estos están a su disposición<!-- .element: class="fragment" data-fragment-index="2" -->
+							Cualquier experto puede tratar datos personales si estos están a su disposición<!-- .element: class="fragment" data-fragment-index="2" -->
 
-							además, la automatización puede llevar a que se olviden la ética y la reflexión<!-- .element: class="fragment" data-fragment-index="3" -->
+							Además, la automatización puede llevar a que se olviden la ética y la reflexión<!-- .element: class="fragment" data-fragment-index="3" -->
 
 						</script>
 
@@ -664,12 +806,12 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 
 					<section data-markdown data-background="./img/snowden.jpg">
 						<script type="text/template">
-							## ética y big data
+							## Ética y big data
 
-							mecanismos de protección:
+							Mecanismos de protección:
 
-							- legislación sobre privacidad y datos personales
-							- comités éticos
+							- Legislación sobre privacidad y datos personales
+							- Comités éticos
 
 						</script>
 
@@ -678,27 +820,27 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					<section data-markdown data-background="./img/hal.jpg">
 						<script type="text/template">
 							<!-- .slide: style="color:red" -->
-							> ¿es ético que un Gobierno utilice nuestros datos para tomar decisiones que corrijan comportamientos individuales al objeto de salvaguardar un bien común de interés mayor?
+							> ¿Es ético que un Gobierno utilice nuestros datos para tomar decisiones que corrijan comportamientos individuales al objeto de salvaguardar un bien común de interés mayor?
 
 						</script>
 
 					</section>
 					<section data-markdown data-background="./img/cantabria.jpg">
 						<script type="text/template">
-							## en la empresa
+							## En la empresa
 
-							- toma de decisiones<!-- .element: class="fragment" data-fragment-index="1" -->
-							- servicios y productos a la carta<!-- .element: class="fragment" data-fragment-index="2" -->
-							- fidelización, captación<!-- .element: class="fragment" data-fragment-index="3" -->
+							- Toma de decisiones<!-- .element: class="fragment" data-fragment-index="1" -->
+							- Servicios y productos a la carta<!-- .element: class="fragment" data-fragment-index="2" -->
+							- Fidelización, captación<!-- .element: class="fragment" data-fragment-index="3" -->
 
-							**democratización del big data: big data como servicio**<!-- .element: class="fragment" data-fragment-index="4" -->
+							**Democratización del big data: big data como servicio**<!-- .element: class="fragment" data-fragment-index="4" -->
 
 						</script>
 
 					</section>
 					<section data-markdown data-background="./img/cantabria.jpg">
 						<script type="text/template">
-						## en la administración pública
+						## En la administración pública
 
 						- <!-- .element: class="fragment" data-fragment-index="1" -->lucha contra el<!-- .element: class="fragment" data-fragment-index="1" --> **fraude fiscal**:<!-- .element: class="fragment" data-fragment-index="1" --> impuestos vs pensiones o empleo<!-- .element: class="fragment" data-fragment-index="1" -->
 						- <!-- .element: class="fragment" data-fragment-index="2" -->**salud**:<!-- .element: class="fragment" data-fragment-index="2" --> búsqueda de patrones y tendencias en enfermedades<!-- .element: class="fragment" data-fragment-index="2" -->
@@ -712,13 +854,14 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## en estadística pública
-							**nuevas fuentes:**
+							## En estadística pública
+							**Nuevas fuentes:**
 
-							- teléfonos móviles<!-- .element: class="fragment" data-fragment-index="1" -->
-							- escáneres de cajas registradoras<!-- .element: class="fragment" data-fragment-index="2" -->
-							- redes sociales<!-- .element: class="fragment" data-fragment-index="3" -->
-							- tarjetas de crédito<!-- .element: class="fragment" data-fragment-index="4" -->
+							- Teléfonos móviles<!-- .element: class="fragment" data-fragment-index="1" -->
+							- Escáneres de cajas registradoras<!-- .element: class="fragment" data-fragment-index="2" -->
+							- Tedes sociales<!-- .element: class="fragment" data-fragment-index="3" -->
+							- Tarjetas de crédito<!-- .element: class="fragment" data-fragment-index="4" -->
+							- Sitios web<!-- .element: class="fragment" data-fragment-index="5" -->
 
 							<small> [Big data analytics for policy making](https://joinup.ec.europa.eu/sites/default/files/dg_digit_study_big_data_analytics_for_policy_making.pdf)</small><!-- .element: class="fragment" data-fragment-index="4" -->
 
@@ -727,9 +870,9 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## ejemplos
-							- [semana santa en tiempo real (BBVA)](http://www.centrodeinnovacionbbva.com/en/news/easter-real-time)
-							- [reelección de Obama en 2012](http://www.infoworld.com/article/2613587/big-data/the-real-story-of-how-big-data-analytics-helped-obama-win.html)
+							## Ejemplos
+							- [Semana santa en tiempo real (BBVA)](http://www.centrodeinnovacionbbva.com/en/news/easter-real-time)
+							- [Reelección de Obama en 2012](http://www.infoworld.com/article/2613587/big-data/the-real-story-of-how-big-data-analytics-helped-obama-win.html)
 
 							y también<!-- .element: class="fragment" data-fragment-index="1" --> [Donald Trump](http://www.lavanguardia.com/internacional/20170302/42436551278/robert-mercer-multimillonario-donald-trump-brexit.html)<!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -749,23 +892,7 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							### big data en el Gobierno de Cantabria
-
-							prueba de concepto en el futuro: indicadores de confianza en la economía
-
-							- fuente: Twitter
-							- tecnología: NoSQL + Python
-							- técnica: análisis de sentimiento y clasificación de texto
-
-							<small>Más información: [Wikipedia](https://en.wikipedia.org/wiki/Sentiment_analysis)</small>
-
-						</script>
-
-					</section>
-
-					<section data-markdown>
-						<script type="text/template">
-							ya se ha hecho algo parecido...
+							## Caso de uso: análisis de sentimiento
 
 							"big pp data"
 
@@ -782,13 +909,13 @@ se explican con las tres Vs: **v**olumen, **v**ariedad y **v**elocidad
 
 				<section data-markdown>
 					<script type="text/template">
-						### conclusiones
+						### Conclusiones
 
-						- producción de datos exponencial en nuestra historia<!-- .element: class="fragment" data-fragment-index="1" -->
-						- problemas asociados: privacidad, capacidad de análisis<!-- .element: class="fragment" data-fragment-index="2" -->
-						- papel fundamental de las AAPP para poner en valor sus datos y regular<!-- .element: class="fragment" data-fragment-index="3" -->
+						- Producción de datos exponencial en nuestra historia<!-- .element: class="fragment" data-fragment-index="1" -->
+						- Problemas asociados: privacidad, capacidad de análisis<!-- .element: class="fragment" data-fragment-index="2" -->
+						- Papel fundamental de las AAPP para poner en valor sus datos y regular<!-- .element: class="fragment" data-fragment-index="3" -->
 
-						><!-- .element: class="fragment" data-fragment-index="4" -->¿a dónde queremos llegar como sociedad?<!-- .element: class="fragment" data-fragment-index="4" -->
+						><!-- .element: class="fragment" data-fragment-index="4" -->¿S dónde queremos llegar como sociedad?<!-- .element: class="fragment" data-fragment-index="4" -->
 
 					</script>
 
